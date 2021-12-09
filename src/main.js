@@ -1,5 +1,6 @@
 // query selector variables go here 👇
-const makePosterButton = document.querySelector(".make-poster")
+var makePosterButton = document.querySelector('.make-poster')
+
 // we've provided you with some data to work with 👇
 var images = [
   "./assets/bees.jpg",
@@ -103,8 +104,8 @@ var currentPoster;
 
 // event listeners go here 👇
 makePosterButton.addEventListener('click', function(){
+
   // will add functionality here later
-  
 })
 
 // functions and event handlers go here 👇
@@ -112,4 +113,3 @@ makePosterButton.addEventListener('click', function(){
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
-
