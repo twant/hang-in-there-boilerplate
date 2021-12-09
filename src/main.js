@@ -1,5 +1,5 @@
 // query selector variables go here 👇
-
+var button = document.querySelector('.make-poster')
 // we've provided you with some data to work with 👇
 var images = [
   "./assets/bees.jpg",
@@ -102,10 +102,12 @@ var savedPosters = [];
 var currentPoster;
 
 // event listeners go here 👇
+button.addEventListener('click', function(event){
+  console.log(event)
+})
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
-
